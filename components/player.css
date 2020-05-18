@@ -40,7 +40,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1.0);
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -51,9 +51,8 @@
 
 .player:hover .time-track .cursor {
     opacity: 1; 
-    width: 14px;
-    height: 14px;
-    transition: width 0.4s, height 0.4s; 
+    transform: translate(-50%, -50%) scale(1.5);
+    transition: transform 0.4s; 
 }
 
 .player .time-track:hover .cursor {
@@ -76,6 +75,10 @@
 
 .player .track .artist {
     color: #555;
+}
+
+.player .track .time {
+    font-size: 0.9em;
 }
 
 /* Controls */
