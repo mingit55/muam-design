@@ -23,7 +23,15 @@
 ol, ul { list-style: none; }
 a, a:hover { text-decoration: none; }
 
-.contents { background-color: #f8f8f8; }
+.contents {
+    background-color: #f8f8f8; 
+    max-width: 1920px;
+    height: calc(100vh - 200px);
+    margin: 80px auto 0;
+    padding: 0 128px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 .wrap {
     max-width: 1920px;
@@ -54,3 +62,18 @@ a, a:hover { text-decoration: none; }
 .top-0 { top: 0; }
 .bottom-0 { bottom: 0; }
 .right-0 { right: 0; }
+
+.fx-n4 { font-size: 0.8em; }
+.fx-n3 { font-size: 0.85em; }
+.fx-n2 { font-size: 0.9em; }
+.fx-n1 { font-size: 0.95em; }
+
+.fx-1 { font-size: 1em; }
+.fx-2 { font-size: 1.1em; }
+.fx-3 { font-size: 1.2em; }
+.fx-4 { font-size: 1.4em; }
+.fx-5 { font-size: 1.6em; }
+.fx-6 { font-size: 1.8em; }
+.fx-7 { font-size: 2em; }
+.fx-8 { font-size: 2.2em; }
+.fx-9 { font-size: 2.6em; }

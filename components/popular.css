@@ -1,0 +1,72 @@
+/* Most Popular */
+
+.most-popular {
+    display: flex;
+    padding: 60px 0;
+}
+
+.most-popular .image {
+    width: 256px;
+    height: 256px;
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+.most-popular .title {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.most-popular .artist {
+    font-size: 1.1em;
+    color: #888;
+}
+
+/* Popular List */
+
+.popular-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    counter-reset: item-cnt;
+    counter-increment: item-cnt;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.popular-list .item {
+    position: relative;
+    padding: 15px 20px 15px 50px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-list .item:first-child { border-top: none; }
+.popular-list .item::before {
+    content: "0" counter(item-cnt) ".";
+    counter-increment: item-cnt;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.popular-list .item .image {
+    width: 64px;
+    height: 64px;
+    background-color: #eee;
+}
+
+.popular-list .item .title {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.popular-list .item .artist,
+.popular-list .item .duration {
+    color: #888;
+}
